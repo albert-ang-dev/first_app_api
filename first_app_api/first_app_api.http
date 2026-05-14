@@ -1,20 +1,36 @@
 @first_app_api_HostAddress = http://localhost:5202
 
 
-### Correct route: the [controller] token in the route attribute removes the "Controller" suffix
-GET {{first_app_api_HostAddress}}/api/Hotel
-Accept: application/json
+# Correct route: the [controller] token in the route attribute removes the "Controller" suffix
+# GET {{first_app_api_HostAddress}}/api/Hotel
+# Accept: application/json
 
+
+
+
+# POST {{first_app_api_HostAddress}}/api/hotel
+# Content-Type: application/json
+
+# {
+#   "Id":3,
+#   "Name":"Albert's Hotel",
+#   "Address":"852 Drive prk",
+#   "Rating":2.3
+# }
+
+
+GET {{first_app_api_HostAddress}}/api/hotels
 
 ###
 
-POST {{first_app_api_HostAddress}}/api/hotel
+POST {{first_app_api_HostAddress}}/api/hotels
 Content-Type: application/json
 
 {
-  "Id":3,
-  "Name":"Albert's Hotel",
-  "Address":"852 Drive prk",
-  "Rating":2.3
+  "name":"Albert's Hotel",
+  "address":"852 Drive prk",
+  "rating":2.3,
+  "countryId":1
 }
 
+###
