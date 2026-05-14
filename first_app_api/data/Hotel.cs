@@ -1,0 +1,10 @@
+﻿namespace first_app_api.data
+{
+    public class Hotel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public double Rating { get; set; }
+    }
+}
